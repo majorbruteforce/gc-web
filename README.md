@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+      GC Web 
+</h1>
 
-## Getting Started
+<div align="center">
+Grand Championship Streaming System seamlessly bridges web and app platforms, improving the experience of our annual sports championship. Stay updated in real-time and engage with the thrill of the game like never before.
 
-First, run the development server:
+<h3>P-Society Handles</h3>
+<h3 align="center">
+	<a href="https://dev-psoc.netlify.app/">Website</a>
+	<span> | </span>
+	<a href="https://discord.gg/UhmKJGMnan">Community Discord</a>
+	<span> | </span>
+	<a href="https://github.com/p-society/gc-server/blob/main/docs/CONTRIBUTING.md">Contribute</a>
+</h3>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<div align="center">
+  
+**GCSB / Grand Championship Broadcasting Service** is a live score broadcasting application for both web and app platforms. The application is built using Golang,Kafka,MongoDB, SSE (Server-Sent Events), and Redis. The web version is being developed using Next.js, while the app version is built using Flutter.
+</div>
+<div align="center">
+<br/>
+<img src='https://skillicons.dev/icons?i=nextjs,redux,tailwind' ></img>
+</div>
+<br/>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+GCSB offers two primary benefits to its users.
 
-## Learn More
+- Real-time score updates for various sports events.
+- Integration with web and app platforms.
+- Utilization of Golang and WS for data transfer.
+- Data storage and retrieval using MongoDB and Redis.
 
-To learn more about Next.js, take a look at the following resources:
+### Current contributors <a name="Current contributors"></a>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<a href="https://github.com/p-society/gc-web/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=p-society/gc-web" />
+</a>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Made with [contributors-img](https://contributors-img.web.app).
 
-## Deploy on Vercel
+# License <a name="License"></a>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+GC-Server and GC-Client is licensed under [Apache License](https://github.com/gc-server/gc-server/blob/master/LICENSE)
