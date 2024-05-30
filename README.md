@@ -25,8 +25,6 @@ Grand Championship Streaming System seamlessly bridges web and app platforms, im
 <div align="center">
 <br/>
 <img src='https://skillicons.dev/icons?i=nextjs,redux,tailwind' ></img>
-<img src='https://github.com/p-society/raag/assets/119437069/5f30138e-fa76-4947-946e-603d2de1550f' width='50' height='50' style='border-radius: 10px;'>
-
 </div>
 <br/>
 
