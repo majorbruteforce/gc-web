@@ -1,90 +1,81 @@
-## [Devias Kit - React](https://material-kit-react.devias.io/)
+<h1 align="center">
+<!-- 	<img width="300" src="https://github.com/gCBS/gCBS_native/blob/stable/assets/gCBSColorPurp@3x.png?raw=true" alt="gCBS"> -->
+      GC-Web
+	<br>
+</h1>
+<div align="center">
 
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
+Web implementation of the for the GC-Broadcasting platform. 
+Front-end for the [gc-broadcast](https://github.com/p-society/gc-broadcast) project
 
-[![Devias Kit - React](https://github.com/devias-io/material-kit-react/blob/main/public/assets/thumbnail.png)](https://material-kit-react.devias.io/)
+<h3>P-Society Handles</h3>
+<h3 align="center">
+	<a href="https://dev-psoc.netlify.app/">Website</a>
+	<span> | </span>
+	<a href="https://discord.gg/5Tj7DEED">Community Discord</a>
+	<span> | </span>
+	<a href="https://github.com/gCBS/gCBS/projects?type=classic">Contribute</a>
+</h3>
 
-> Free React Admin Dashboard made with [MUI's](https://mui.com) components, [React](https://reactjs.org) and of course [Next.js](https://github.com/vercel/next.js) to boost your app development process!
+</div>
 
-## Pages 
+<div align="center">
+<br/>
+<img src='https://skillicons.dev/icons?i=react,vite,ts,npm' ></img>
 
-- [Dashboard](https://material-kit-react.devias.io)
-- [Customers](https://material-kit-react.devias.io/dashboard/customers)
-- [Integrations](https://material-kit-react.devias.io/dashboard/integrations)
-- [Settings](https://material-kit-react.devias.io/dashboard/settings)
-- [Account](https://material-kit-react.devias.io/dashboard/account)
-- [Sign In](https://material-kit-react.devias.io/auth/sign-in)
-- [Sign Up](https://material-kit-react.devias.io/auth/sign-up)
-- [Reset Password](https://material-kit-react.devias.io/auth/reset-password)
+</div>
+<br/>
 
-## Free Figma Community File
+## Reference Design 
 
-- [Duplicate File](https://www.figma.com/file/b3L1Np4RYiicZAOMopHNkm/Devias-Dashboard-Design-Library-Kit)
-
-## Upgrade to PRO Version
-
-We also have a pro version of this product which bundles even more pages and components if you want
-to save more time and design efforts :)
-
-| Free Version (this one)  | [Devias Kit Pro](https://mui.com/store/items/devias-kit-pro/)                |
-| ------------------------ | :--------------------------------------------------------------------------- |
-| **8** Pages              | **80+** Pages                                                                |
-| ✔ Custom Authentication  | ✔ Authentication with **Amplify**, **Auth0**, **Firebase** and **Supabase**  |
-| -                        | ✔ Vite Version                                                               |
-| -                        | ✔ Dark Mode Support                                                          |
-| -                        | ✔ Complete Users Flows                                                       |
-| -                        | ✔ Premium Technical Support                                                  |
+- [Figma Link](https://www.figma.com/proto/SssaYtsbzcGpUTQKiUx7eJ/GC-App?node-id=2-2&t=NWKObi5xQYFAlT0b-1)
 
 ## Quick start
 
-- Clone the repo: `git clone https://github.com/devias-io/material-kit-react.git`
+- Clone the repo: `git clone https://github.com/p-society/gc-web.git` 
+- Switch to dev branch `git checkout dev`
 - Make sure your Node.js and npm versions are up to date
-- Install dependencies: `npm install` or `yarn`
-- Start the server: `npm run dev` or `yarn dev`
-- Open browser: `http://localhost:3000`
+- Install dependencies: `npm install`
+- Start the server: `npm run dev`
+- Open browser: `http://localhost:8173`
 
-## File Structure
+## Folder Structure & Config
 
-Within the download you'll find the following directories and files:
+Within the repo you'll find the following directories and config files:
 
 ```
-┌── .editorconfig
-├── .eslintrc.js
+├── eslint.config.mjs
 ├── .gitignore
 ├── CHANGELOG.md
 ├── LICENSE.md
-├── next-env.d.ts
-├── next.config.js
 ├── package.json
 ├── README.md
 ├── tsconfig.json
+├── tsconfig.node.json
+├── tailwind.config.js
+├── vite.config.js
+├── vite-env.d.ts
 ├── public
 └── src
+    ├── assets 
 	├── components
-	├── contexts
-	├── hooks
-	├── lib
-	├── styles
+	├── layouts
 	├── types
-	└── app
-		├── layout.tsx
-		├── page.tsx
-		├── auth
-		└── dashboard
+	├── services
+	├── utils
+
 ```
+### Current contributors <a name="Current contributors"></a>
 
-## Resources
-
-- More freebies like this one: https://devias.io
-
-## Reporting Issues:
-
-- [Github Issues Page](https://github.com/devias-io/material-kit-react/issues)
+<a href="https://github.com/gCBS/gCBS/graphs/contributors">
+  <img src="https://github.com/ujsquared.png" width="60px"/>
+  <img src="https://github.com/anurag6569201.png" width="60px"/>
+</a>
 
 ## License
 
-- Licensed under [MIT](https://github.com/devias-io/material-kit-react/blob/main/LICENSE.md)
+- Licensed under MIT, refer to LICENSE.md for more info
 
-## Contact Us
+## Want to Contribute?
 
-- Email Us: support@deviasio.zendesk.com
+- Open an issue if you have a feature request or found a bug
