@@ -1,33 +1,37 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules"; 
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import '../../css/onboard/onboard.css';
+import "../../css/onboard/onboard.css";
 
-function SwiperOnboard() {
-    const swiperRef = useRef(null);
+const SwiperOnboard: React.FC = () => {
+    const swiperRef = useRef<Swiper | null>(null);
 
-    const handleNext = () => {
+    const handleNext = (): void => {
         if (swiperRef.current && swiperRef.current.swiper) {
-            swiperRef.current.swiper.slideNext(); 
+            swiperRef.current.swiper.slideNext();
         }
     };
 
     return (
-        <>
         <div className="onboard_wrapper">
             <div>
-                <Swiper navigation={true} modules={[Navigation]} className="mySwiper" ref={swiperRef} >
+                <Swiper
+                    navigation={true}
+                    modules={[Navigation]}
+                    className="mySwiper"
+                    ref={swiperRef}
+                >
                     <SwiperSlide>
-                        <img src="images/onboard/1.png" alt="" />
+                        <img src="images/onboard/1.png" alt="Slide 1" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="images/onboard/2.png" alt="" />
+                        <img src="images/onboard/2.png" alt="Slide 2" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="images/onboard/3.png" alt="" />
+                        <img src="images/onboard/3.png" alt="Slide 3" />
                     </SwiperSlide>
                 </Swiper>
                 <div className="onboard_header">
@@ -39,11 +43,10 @@ function SwiperOnboard() {
                 <button onClick={handleNext}>Next</button>
             </div>
             <div className="skip_button">
-               <a className="skip_button_link" href="#">SKIP →</a>
+                <a className="skip_button_link" href="#">SKIP →</a>
             </div>
         </div>
-        </>
     );
-}
+};
 
 export default SwiperOnboard;
