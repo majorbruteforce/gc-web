@@ -1,5 +1,5 @@
-import React, { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { useRef, useState } from "react";
+import { Swiper, SwiperClass, SwiperSlide, SwiperRef } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -8,19 +8,19 @@ import "../../css/onboard/onboard.css";
 import OnboardingLast from "./onboard_last"; 
 
 const SwiperOnboard: React.FC = () => {
-    const swiperRef = useRef<Swiper | null>(null);
+    const swiperRef = useRef<SwiperRef | null>(null);
     const [isLastSlide, setIsLastSlide] = useState(false);
     const [showLastScreen, setShowLastScreen] = useState(false);
 
     const handleNext = (): void => {
         if (isLastSlide) {
             setShowLastScreen(true)
-        } else if (swiperRef.current && swiperRef.current.swiper) {
+        } else if (swiperRef.current?.swiper ) {
             swiperRef.current.swiper.slideNext();
         }
     };
 
-    const onSlideChange = (swiper: null): void => {
+    const onSlideChange = (swiper: SwiperClass): void => {
         setIsLastSlide(swiper.isEnd);
     };
 

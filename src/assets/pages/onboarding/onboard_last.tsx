@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import "../../css/onboard/onboard.css";
 
 const OnboardingLast: FC = () => {
