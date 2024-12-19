@@ -1,29 +1,37 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
 import "../../css/onboard/onboard.css";
+import OnboardingLast from "./onboard_last"; 
 
 const SwiperOnboard: React.FC = () => {
     const swiperRef = useRef<Swiper | null>(null);
+    const [isLastSlide, setIsLastSlide] = useState(false);
+    const [showLastScreen, setShowLastScreen] = useState(false);
 
     const handleNext = (): void => {
-        if (swiperRef.current && swiperRef.current.swiper) {
+        if (isLastSlide) {
+            setShowLastScreen(true)
+        } else if (swiperRef.current && swiperRef.current.swiper) {
             swiperRef.current.swiper.slideNext();
         }
     };
 
+    const onSlideChange = (swiper: null): void => {
+        setIsLastSlide(swiper.isEnd);
+    };
+
+    if (showLastScreen) {
+        return <OnboardingLast />;
+    }
+
     return (
         <div className="onboard_wrapper">
             <div>
-                <Swiper
-                    navigation={true}
-                    modules={[Navigation]}
-                    className="mySwiper"
-                    ref={swiperRef}
-                >
+                <Swiper navigation={true} modules={[Navigation]} className="mySwiper" ref={swiperRef} onSlideChange={onSlideChange}>
                     <SwiperSlide>
                         <img src="images/onboard/1.png" alt="Slide 1" />
                     </SwiperSlide>
@@ -43,7 +51,7 @@ const SwiperOnboard: React.FC = () => {
                 <button onClick={handleNext}>Next</button>
             </div>
             <div className="skip_button">
-                <a className="skip_button_link" href="#">SKIP →</a>
+                <a onClick={() => setShowLastScreen(true)} className="skip_button_link"> SKIP → </a>
             </div>
         </div>
     );
