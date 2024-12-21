@@ -1,0 +1,38 @@
+{
+  "authentication": "/authentication",
+  "organization": "/organization",
+  "users": "/users",
+  "vendors": "/inventory/vendors",
+  "formFieldSections": "/form-field-sections",
+  "formFields": "/form-fields",
+  "profile": "/profile",
+  "branch": "/branch",
+  "department": "/department",
+  "leaveType": "/leave-types",
+  "attendance": "/attendance-log",
+  "attendanceRegularization": "/attendance-regularization",
+  "leave": "/leaves",
+  "getForm": "/get-form",
+  "branchUser": "/branch-user",
+  "files": "/upload",
+  "exportAttendanceLog": "/export/attendance-log",
+  "exportAttendanceRegularizationLog": "/export/attendance-regularization-log",
+  "floors": "/floors",
+  "rooms": "/rooms",
+  "dashboard": "/dashboard-stats",
+  "tasks": "/tasks",
+  "items": "inventory/items",
+  "purchaseorders": "inventory/purchase-orders",
+  "purchasereceive": "inventory/purchase-receives",
+  "itemlog": "inventory/items-logs",
+  "itemadjustment": "inventory/items-adjustment",
+  "purchaseordermanage": "inventory/purchase-orders-manage-items",
+  "salesorder": "inventory/sales-orders"
+
+
+
+
+
+
+
+}
