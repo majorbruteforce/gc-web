@@ -1,85 +1,49 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-node_modules
+# compiled output
 dist
-dist-ssr
-*.local
+tmp
+out-tsc
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-# Created by https://www.toptal.com/developers/gitignore/api/react,vim,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=react,vim,visualstudiocode
-
-### react ###
-.DS_*
-*.log
-logs
-**/*.backup.*
-**/*.back.*
-
+# dependencies
 node_modules
-bower_components
 
-*.sublime*
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-psd
-thumb
-sketch
-
-### Vim ###
-# Swap
-[._]*.s[a-v][a-z]
-!*.svg  # comment out if you don't need vector files
-[._]*.sw[a-p]
-[._]s[a-rt-v][a-z]
-[._]ss[a-gi-z]
-[._]sw[a-p]
-
-# Session
-Session.vim
-Sessionx.vim
-
-# Temporary
-.netrwhist
-*~
-# Auto-generated tag files
-tags
-# Persistent undo
-[._]*.un~
-
-### VisualStudioCode ###
+# IDE - VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-!.vscode/*.code-snippets
 
-# Local History for Visual Studio Code
-.history/
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
 
-# Built Visual Studio Code Extensions
-*.vsix
+# System Files
+.DS_Store
+Thumbs.db
 
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-.ionide
+.nx/cache
+.nx/workspace-data
 
-# End of https://www.toptal.com/developers/gitignore/api/react,vim,visualstudiocode
+# Next.js
+.next
+out
 
+apps/controls/libs/utils/src/request
+apps/controls/.nx
