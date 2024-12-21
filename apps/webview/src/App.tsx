@@ -1,5 +1,5 @@
 import React from "react";
-import '../src/assets/css/global/page.css'
+import './assets/css/global/page.css'
 import SwiperOnboard from "./assets/pages/onboarding/onboard";
 const App: React.FC = () => {
   return (
