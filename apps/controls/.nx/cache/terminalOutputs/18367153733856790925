@@ -1,0 +1,20 @@
+[2m> [22mnext dev
+
+^C/home/soubhik/codes/gc-broadcast-web/node_modules/@nx/next/node_modules/nx/src/project-graph/project-graph.js:30
+        throw new Error((0, strip_indents_1.stripIndents) `
+              ^
+
+Error: [readCachedProjectGraph] ERROR: No cached ProjectGraph is available.
+
+If you are leveraging \`readCachedProjectGraph()\` directly then you will need to refactor your usage to first ensure that
+the ProjectGraph is created by calling \`await createProjectGraphAsync()\` somewhere before attempting to read the data.
+
+If you encounter this error as part of running standard \`nx\` commands then please open an issue on https://github.com/nrwl/nx
+    at readCachedProjectGraph (/home/soubhik/codes/gc-broadcast-web/node_modules/[4m@nx[24m/next/node_modules/[4mnx[24m/src/project-graph/project-graph.js:30:15)
+    at /home/soubhik/codes/gc-broadcast-web/node_modules/[4m@nx[24m/next/plugins/with-nx.js:111:25
+    at async combined (/home/soubhik/codes/gc-broadcast-web/node_modules/[4m@nx[24m/next/src/utils/compose-plugins.js:12:30)
+    at async normalizeConfig (/home/soubhik/codes/gc-broadcast-web/node_modules/[4mnext[24m/dist/server/config-shared.js:161:12)
+    at async loadConfig (/home/soubhik/codes/gc-broadcast-web/node_modules/[4mnext[24m/dist/server/config.js:727:28)
+    at async Module.nextDev (/home/soubhik/codes/gc-broadcast-web/node_modules/[4mnext[24m/dist/cli/next-dev.js:175:14)
+
+Node.js v22.11.0

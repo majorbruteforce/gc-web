@@ -1,0 +1,11 @@
+[2m> [22mnext dev
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.21[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1853ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 3s (466 modules)
+ GET / [32m200[39m in 3224ms
+^C[?25h

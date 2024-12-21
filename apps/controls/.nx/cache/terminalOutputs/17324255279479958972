@@ -1,0 +1,17 @@
+[2m> [22mnext dev
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.16[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+
+ [37m[1m [22m[39m We detected TypeScript in your project and reconfigured your [36mtsconfig.json[39m file for you. Strict-mode is set to [36mfalse[39m by default.
+ [37m[1m [22m[39m The following suggested values were added to your [36mtsconfig.json[39m. These values [36mcan be changed[39m to fit your project's needs:
+
+ [37m[1m [22m[39m 	- [36minclude[39m was updated to add [1m'.next/types/**/*.ts'[22m
+
+ [32m[1m✓[22m[39m Ready in 1699ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 2s (464 modules)
+ GET / [32m200[39m in 2155ms
+^C[?25h

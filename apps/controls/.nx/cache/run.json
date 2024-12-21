@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx dev auth",
+    "startTime": "2024-12-21T09:33:55.330Z",
+    "endTime": "2024-12-21T09:34:09.795Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "auth:dev",
+      "target": "dev",
+      "projectName": "auth",
+      "hash": "1439061399340817918",
+      "startTime": "2024-12-21T09:33:55.339Z",
+      "endTime": "2024-12-21T09:34:09.795Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

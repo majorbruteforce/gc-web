@@ -1,0 +1,3059 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.3.0",
+  "pathMappings": {
+    "@gc-broadcast-web/components/*": [
+      "libs/components/src/*"
+    ],
+    "@gc-broadcast-web/config/*": [
+      "libs/config/src/*"
+    ],
+    "@gc-broadcast-web/hooks/*": [
+      "libs/hooks/src/*"
+    ],
+    "@gc-broadcast-web/redux/*": [
+      "libs/redux/src/*"
+    ],
+    "@gc-broadcast-web/utils/*": [
+      "libs/utils/src/*"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/next/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "serveStaticTargetName": "serve-static"
+      }
+    },
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "16278889715671120839"
+      },
+      {
+        "file": "README.md",
+        "hash": "7100275949934406612"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "17866138117546000433"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "package.json",
+        "hash": "9305216513617745692"
+      },
+      {
+        "file": "nx.json",
+        "hash": "9634391287326352108"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "13950236737098809827"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "7360478915843480458"
+      },
+      {
+        "file": "eslint.config.cjs",
+        "hash": "4219588132382477313"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "11189518018555588736"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "11309362834336059819"
+      }
+    ],
+    "projectFileMap": {
+      "components": [
+        {
+          "file": "libs/components/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/components/README.md",
+          "hash": "17764656877035248431"
+        },
+        {
+          "file": "libs/components/project.json",
+          "hash": "16879844383339646161"
+        },
+        {
+          "file": "libs/components/src/ContentDrawer.tsx",
+          "hash": "739862030898245181",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "npm:framer-motion"
+          ]
+        },
+        {
+          "file": "libs/components/src/FormElement/AutoCompletes/UserAutoComplete.tsx",
+          "hash": "3260398197227469800"
+        },
+        {
+          "file": "libs/components/src/FormElement/AutoCompletes/branch-auto-complete.tsx",
+          "hash": "11252175564091260540",
+          "deps": [
+            "redux",
+            "npm:@mui/material",
+            "npm:react",
+            "npm:react-redux",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/FormElement/AutoCompletes/index.tsx",
+          "hash": "16124059558491475748",
+          "deps": [
+            "npm:react-hook-form",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/FormElement/FormInputElement/FormInputAvatar.tsx",
+          "hash": "11678851946169963550",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "npm:react-hook-form"
+          ]
+        },
+        {
+          "file": "libs/components/src/FormElement/FormInputElement/FormInputDatePicker.tsx",
+          "hash": "18047702628911787548",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:@mui/material",
+            "npm:dayjs",
+            "npm:@mui/x-date-pickers"
+          ]
+        },
+        {
+          "file": "libs/components/src/FormElement/FormInputElement/FormInputFile.tsx",
+          "hash": "16031459801376945040",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "npm:react-hook-form"
+          ]
+        },
+        {
+          "file": "libs/components/src/FormElement/FormInputElement/FormInputFiles.tsx",
+          "hash": "15286395635509965290",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "npm:react-hook-form",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/FormElement/FormInputElement/FormInputPassword.tsx",
+          "hash": "3116354631221615266",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "npm:@mui/icons-material"
+          ]
+        },
+        {
+          "file": "libs/components/src/FormElement/FormInputElement/FormInputTimePicker.tsx",
+          "hash": "8909722939912891135",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:@mui/material",
+            "npm:dayjs",
+            "npm:@mui/x-date-pickers"
+          ]
+        },
+        {
+          "file": "libs/components/src/FormElement/FormInputElement/constants.ts",
+          "hash": "3314606725910084882"
+        },
+        {
+          "file": "libs/components/src/FormElement/FormInputElement/index.tsx",
+          "hash": "17179730251996096511",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/FormElement/create-schema.ts",
+          "hash": "14487166173675196234",
+          "deps": [
+            "npm:yup"
+          ]
+        },
+        {
+          "file": "libs/components/src/FormElement/index.tsx",
+          "hash": "15523245948986052411",
+          "deps": [
+            "npm:yup",
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:@hookform/resolvers",
+            "npm:@mui/material",
+            "npm:@mui/lab",
+            "hooks"
+          ]
+        },
+        {
+          "file": "libs/components/src/SideDrawer.tsx",
+          "hash": "13712403352517052513",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/SideDrawerForm.tsx",
+          "hash": "1631598741816091703"
+        },
+        {
+          "file": "libs/components/src/UserTableItem.tsx",
+          "hash": "14424317557338355412",
+          "deps": [
+            "npm:@mui/material",
+            "redux",
+            "config",
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/components/src/animate/index.ts",
+          "hash": "4804420002055611591"
+        },
+        {
+          "file": "libs/components/src/animate/motion-container.tsx",
+          "hash": "13131087584732752025",
+          "deps": [
+            "npm:framer-motion",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/animate/motion-lazy.tsx",
+          "hash": "4188669895727385289",
+          "deps": [
+            "npm:framer-motion"
+          ]
+        },
+        {
+          "file": "libs/components/src/animate/motion-viewport.tsx",
+          "hash": "14948452111993701035",
+          "deps": [
+            "npm:framer-motion",
+            "npm:@mui/material",
+            "hooks"
+          ]
+        },
+        {
+          "file": "libs/components/src/animate/types.ts",
+          "hash": "14259268521418651936"
+        },
+        {
+          "file": "libs/components/src/animate/variants/actions.ts",
+          "hash": "865188352234456892"
+        },
+        {
+          "file": "libs/components/src/animate/variants/background.ts",
+          "hash": "13453869450659735709"
+        },
+        {
+          "file": "libs/components/src/animate/variants/bounce.ts",
+          "hash": "10124308593017814744"
+        },
+        {
+          "file": "libs/components/src/animate/variants/container.ts",
+          "hash": "5367222046263741370"
+        },
+        {
+          "file": "libs/components/src/animate/variants/fade.ts",
+          "hash": "14525657127438875266"
+        },
+        {
+          "file": "libs/components/src/animate/variants/flip.ts",
+          "hash": "1538231210097000178"
+        },
+        {
+          "file": "libs/components/src/animate/variants/index.ts",
+          "hash": "14895499086907324049"
+        },
+        {
+          "file": "libs/components/src/animate/variants/path.ts",
+          "hash": "12007917588490267646"
+        },
+        {
+          "file": "libs/components/src/animate/variants/rotate.ts",
+          "hash": "7479083721492795029"
+        },
+        {
+          "file": "libs/components/src/animate/variants/scale.ts",
+          "hash": "18179038148176857779"
+        },
+        {
+          "file": "libs/components/src/animate/variants/slide.ts",
+          "hash": "6168803391126418456"
+        },
+        {
+          "file": "libs/components/src/animate/variants/transition.ts",
+          "hash": "14656429681978145160"
+        },
+        {
+          "file": "libs/components/src/animate/variants/zoom.ts",
+          "hash": "7114696308140125180"
+        },
+        {
+          "file": "libs/components/src/carousel/arrow-icons.tsx",
+          "hash": "2105108918949092900"
+        },
+        {
+          "file": "libs/components/src/carousel/carousel-arrow-index.tsx",
+          "hash": "6869715438390571491",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/carousel/carousel-arrows.tsx",
+          "hash": "10322856788474464716",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/carousel/carousel-dots.tsx",
+          "hash": "6799802889505736596",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/carousel/index.ts",
+          "hash": "13973652642177938039"
+        },
+        {
+          "file": "libs/components/src/carousel/use-carousel.ts",
+          "hash": "9465037899326909794",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/chart/chart.tsx",
+          "hash": "15716810432268392759",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:@mui/material",
+            "utils",
+            [
+              "npm:react-apexcharts",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "libs/components/src/chart/index.ts",
+          "hash": "15952354490890394416"
+        },
+        {
+          "file": "libs/components/src/chart/use-chart.ts",
+          "hash": "5621207506110144328",
+          "deps": [
+            "npm:lodash",
+            "npm:apexcharts",
+            "npm:@mui/material",
+            "hooks"
+          ]
+        },
+        {
+          "file": "libs/components/src/color-utils/color-picker.tsx",
+          "hash": "2411247878277782149",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/color-utils/color-preview.tsx",
+          "hash": "15027825184310092692",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/color-utils/index.ts",
+          "hash": "5850143335396508017"
+        },
+        {
+          "file": "libs/components/src/color-utils/types.ts",
+          "hash": "13013246549555818809",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/confirm/ConfirmProvider.tsx",
+          "hash": "7487982271980903370",
+          "deps": [
+            "npm:material-ui-confirm"
+          ]
+        },
+        {
+          "file": "libs/components/src/country-select/country-select.tsx",
+          "hash": "6305922550611629590",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/country-select/index.ts",
+          "hash": "202533514122442472"
+        },
+        {
+          "file": "libs/components/src/custom-breadcrumbs/custom-breadcrumbs.tsx",
+          "hash": "2526830143945421694",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/custom-breadcrumbs/index.ts",
+          "hash": "17290598700333385898"
+        },
+        {
+          "file": "libs/components/src/custom-breadcrumbs/link-item.tsx",
+          "hash": "17262122200595453703",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/custom-breadcrumbs/types.ts",
+          "hash": "11429867356381366489",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/custom-date-range-picker/custom-date-range-picker.tsx",
+          "hash": "11056840562911394738",
+          "deps": [
+            "npm:@mui/material",
+            "npm:@mui/x-date-pickers",
+            "hooks"
+          ]
+        },
+        {
+          "file": "libs/components/src/custom-date-range-picker/index.ts",
+          "hash": "1643470628756055933"
+        },
+        {
+          "file": "libs/components/src/custom-date-range-picker/types.ts",
+          "hash": "13500862775443894852"
+        },
+        {
+          "file": "libs/components/src/custom-date-range-picker/use-date-range-picker.ts",
+          "hash": "5793620394243817571",
+          "deps": [
+            "npm:react",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/custom-date-range-picker/utils.ts",
+          "hash": "4513620229622631902",
+          "deps": [
+            "npm:date-fns",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/custom-dialog/confirm-dialog.tsx",
+          "hash": "3551245864355829634",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/custom-dialog/index.ts",
+          "hash": "15131680324810650112"
+        },
+        {
+          "file": "libs/components/src/custom-dialog/types.ts",
+          "hash": "17350713804013756296",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/custom-popover/custom-popover.tsx",
+          "hash": "9246579834330079",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/custom-popover/index.ts",
+          "hash": "9425258850506878013"
+        },
+        {
+          "file": "libs/components/src/custom-popover/styles.tsx",
+          "hash": "3104240230982041472",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/custom-popover/types.ts",
+          "hash": "14238122136630952347",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/custom-popover/use-popover.ts",
+          "hash": "11658299185156813904",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/components/src/custom-popover/utils.ts",
+          "hash": "1865789255028203261"
+        },
+        {
+          "file": "libs/components/src/editor/editor.tsx",
+          "hash": "18236955902281393139",
+          "deps": [
+            "utils",
+            "npm:next",
+            "npm:@mui/material",
+            [
+              "npm:react-quill",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "libs/components/src/editor/index.ts",
+          "hash": "14677499382162027980"
+        },
+        {
+          "file": "libs/components/src/editor/styles.ts",
+          "hash": "3326358850013556949",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/editor/toolbar.tsx",
+          "hash": "11712404781553168598"
+        },
+        {
+          "file": "libs/components/src/editor/types.ts",
+          "hash": "10846298874436886620",
+          "deps": [
+            "npm:react-quill",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/empty-content/empty-content.tsx",
+          "hash": "13107011983710870999",
+          "deps": [
+            "npm:@mui/material",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/components/src/empty-content/index.ts",
+          "hash": "5456376572245154724"
+        },
+        {
+          "file": "libs/components/src/file-thumbnail/download-button.tsx",
+          "hash": "2164338114880482667",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/file-thumbnail/file-thumbnail.tsx",
+          "hash": "10214345331915490016",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/file-thumbnail/index.ts",
+          "hash": "12399942007949638493"
+        },
+        {
+          "file": "libs/components/src/file-thumbnail/types.ts",
+          "hash": "36188954869554498"
+        },
+        {
+          "file": "libs/components/src/file-thumbnail/utils.ts",
+          "hash": "5934527117204284574"
+        },
+        {
+          "file": "libs/components/src/hook-form/form-provider.tsx",
+          "hash": "5847737995877181228",
+          "deps": [
+            "npm:react-hook-form"
+          ]
+        },
+        {
+          "file": "libs/components/src/hook-form/index.ts",
+          "hash": "12739900776898570657"
+        },
+        {
+          "file": "libs/components/src/hook-form/rhf-autocomplete.tsx",
+          "hash": "11615578338008941297",
+          "deps": [
+            "npm:react-hook-form",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/hook-form/rhf-checkbox.tsx",
+          "hash": "9624920304217915546",
+          "deps": [
+            "npm:react-hook-form",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/hook-form/rhf-code.tsx",
+          "hash": "3849831752282763854",
+          "deps": [
+            "npm:react-hook-form",
+            "npm:mui-one-time-password-input",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/hook-form/rhf-editor.tsx",
+          "hash": "1849803611893087844",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/hook-form/rhf-radio-group.tsx",
+          "hash": "2763879921677601834",
+          "deps": [
+            "npm:react-hook-form",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/hook-form/rhf-select.tsx",
+          "hash": "1864627002227494369",
+          "deps": [
+            "npm:react-hook-form",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/hook-form/rhf-slider.tsx",
+          "hash": "17930648253785547493",
+          "deps": [
+            "npm:react-hook-form",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/hook-form/rhf-switch.tsx",
+          "hash": "18335102107491476669",
+          "deps": [
+            "npm:react-hook-form",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/hook-form/rhf-text-field.tsx",
+          "hash": "4400101049258007836",
+          "deps": [
+            "npm:react-hook-form",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/hook-form/rhf-upload.tsx",
+          "hash": "13756757602740068379",
+          "deps": [
+            "npm:react-hook-form",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/iconify/iconify.tsx",
+          "hash": "443091776483741050",
+          "deps": [
+            "npm:react",
+            "npm:@iconify/react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/iconify/index.ts",
+          "hash": "7772006509972227209"
+        },
+        {
+          "file": "libs/components/src/iconify/types.ts",
+          "hash": "14977869054158764775",
+          "deps": [
+            "npm:@iconify/react"
+          ]
+        },
+        {
+          "file": "libs/components/src/image/image.tsx",
+          "hash": "9706834907059395563",
+          "deps": [
+            "npm:react",
+            "npm:react-lazy-load-image-component",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/image/index.ts",
+          "hash": "14574125270490052582"
+        },
+        {
+          "file": "libs/components/src/image/types.ts",
+          "hash": "8384053279663185138",
+          "deps": [
+            "npm:react-lazy-load-image-component",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/image/utils.ts",
+          "hash": "9192225790354242361"
+        },
+        {
+          "file": "libs/components/src/index.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/components/src/label/index.ts",
+          "hash": "12994296263364898316"
+        },
+        {
+          "file": "libs/components/src/label/label.tsx",
+          "hash": "15669477531760817253",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/label/styles.ts",
+          "hash": "7005984077387728730",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/label/types.ts",
+          "hash": "4378927095767228415",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/lightbox/index.ts",
+          "hash": "6542081658267512723",
+          "deps": [
+            "npm:yet-another-react-lightbox"
+          ]
+        },
+        {
+          "file": "libs/components/src/lightbox/lightbox.tsx",
+          "hash": "9504072309168171382",
+          "deps": [
+            "npm:yet-another-react-lightbox",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/lightbox/styles.tsx",
+          "hash": "17991523079461328594",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/lightbox/types.ts",
+          "hash": "2616523621089362533",
+          "deps": [
+            "npm:yet-another-react-lightbox"
+          ]
+        },
+        {
+          "file": "libs/components/src/lightbox/use-light-box.ts",
+          "hash": "4224063495248725242",
+          "deps": [
+            "npm:react",
+            "npm:yet-another-react-lightbox"
+          ]
+        },
+        {
+          "file": "libs/components/src/loading-screen/index.ts",
+          "hash": "12718146933640993441"
+        },
+        {
+          "file": "libs/components/src/loading-screen/loading-screen.tsx",
+          "hash": "18077977437143142552",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/loading-screen/splash-screen.tsx",
+          "hash": "9728891857574310032",
+          "deps": [
+            "npm:framer-motion",
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/logo/index.ts",
+          "hash": "17460079387764083151"
+        },
+        {
+          "file": "libs/components/src/logo/logo.tsx",
+          "hash": "866288799086463746",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/map/index.ts",
+          "hash": "8798702464510399044"
+        },
+        {
+          "file": "libs/components/src/map/map-control.tsx",
+          "hash": "850851347496902355"
+        },
+        {
+          "file": "libs/components/src/map/map-marker.tsx",
+          "hash": "5658035148587872890",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/map/map-popup.tsx",
+          "hash": "3641263822972691639",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/map/styles.tsx",
+          "hash": "8050975837327120087",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/map/types.ts",
+          "hash": "15182748456100115370"
+        },
+        {
+          "file": "libs/components/src/markdown/index.ts",
+          "hash": "9617299635655748990"
+        },
+        {
+          "file": "libs/components/src/markdown/markdown.tsx",
+          "hash": "2736533856855028134",
+          "deps": [
+            "utils",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/markdown/styles.ts",
+          "hash": "17427915691932110872",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/markdown/types.ts",
+          "hash": "6150522146133352650",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/mega-menu/common/menu-more-link.tsx",
+          "hash": "6901686389957208615",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/mega-menu/common/menu-products.tsx",
+          "hash": "4299533166728875104",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/mega-menu/common/menu-tags.tsx",
+          "hash": "16055886090987618150",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/mega-menu/common/nav-sub-list.tsx",
+          "hash": "12353718999531785267",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/mega-menu/horizontal/mega-menu-desktop-horizontal.tsx",
+          "hash": "15403208931475676517",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/mega-menu/horizontal/nav-item.tsx",
+          "hash": "5828550659197376018",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/mega-menu/horizontal/nav-list.tsx",
+          "hash": "15461620545581133999",
+          "deps": [
+            "npm:react",
+            "npm:@mui/lab",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/mega-menu/index.ts",
+          "hash": "990153259781908856"
+        },
+        {
+          "file": "libs/components/src/mega-menu/mobile/mega-menu-mobile.tsx",
+          "hash": "15457804828800518445",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/mega-menu/mobile/nav-item.tsx",
+          "hash": "18386418656063543694",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/mega-menu/mobile/nav-list.tsx",
+          "hash": "10959236373326774366",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/mega-menu/types.ts",
+          "hash": "4183678149318631504",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/mega-menu/vertical/mega-menu-desktop-vertical.tsx",
+          "hash": "10778082869676294649",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/mega-menu/vertical/nav-item.tsx",
+          "hash": "4794992354798542908",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/mega-menu/vertical/nav-list.tsx",
+          "hash": "2958418998972275817",
+          "deps": [
+            "npm:react",
+            "npm:@mui/lab",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-basic/desktop/nav-basic-desktop.tsx",
+          "hash": "6159171484285790260",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-basic/desktop/nav-item.tsx",
+          "hash": "10496931944924209262",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-basic/desktop/nav-list.tsx",
+          "hash": "11991736011710700507",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-basic/index.ts",
+          "hash": "1645771145231269928"
+        },
+        {
+          "file": "libs/components/src/nav-basic/mobile/nav-basic-mobile.tsx",
+          "hash": "9453476542681023801",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-basic/mobile/nav-item.tsx",
+          "hash": "15395810148617315391",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-basic/mobile/nav-list.tsx",
+          "hash": "1493968229400216690",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-basic/types.ts",
+          "hash": "3537486322513160203",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-section/horizontal/index.ts",
+          "hash": "8608548646504690793"
+        },
+        {
+          "file": "libs/components/src/nav-section/horizontal/nav-item.tsx",
+          "hash": "6636547336937523276",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-section/horizontal/nav-list.tsx",
+          "hash": "11064139375797595980",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-section/horizontal/nav-section-horizontal.tsx",
+          "hash": "945451006155651794",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-section/index.ts",
+          "hash": "11878953568921603359"
+        },
+        {
+          "file": "libs/components/src/nav-section/mini/index.ts",
+          "hash": "7278683402940531476"
+        },
+        {
+          "file": "libs/components/src/nav-section/mini/nav-item.tsx",
+          "hash": "14041312134153416180",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-section/mini/nav-list.tsx",
+          "hash": "7513437366868746998",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-section/mini/nav-section-mini.tsx",
+          "hash": "4668173946708792104",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-section/types.ts",
+          "hash": "896318020023937003",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-section/vertical/index.ts",
+          "hash": "4769415061774022809"
+        },
+        {
+          "file": "libs/components/src/nav-section/vertical/nav-item.tsx",
+          "hash": "13649095328014197995",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-section/vertical/nav-list.tsx",
+          "hash": "11851836112186233494",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/nav-section/vertical/nav-section-vertical.tsx",
+          "hash": "8907467849329220542",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/organizational-chart/common/group-node.tsx",
+          "hash": "14620899165774533942",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/organizational-chart/common/simple-node.tsx",
+          "hash": "13048592575524100557",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/organizational-chart/common/standard-node.tsx",
+          "hash": "7305660882743149113",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/organizational-chart/index.ts",
+          "hash": "2452914373889278950",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/components/src/organizational-chart/organizational-chart.tsx",
+          "hash": "4203283211465333135",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/organizational-chart/types.ts",
+          "hash": "5882604752602132768",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/progress-bar/index.ts",
+          "hash": "8945673907870575157"
+        },
+        {
+          "file": "libs/components/src/progress-bar/progress-bar.tsx",
+          "hash": "8268497006124226741",
+          "deps": [
+            "npm:nprogress",
+            "npm:react",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/progress-bar/styles.tsx",
+          "hash": "4296233435783448930",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/scroll-progress/index.ts",
+          "hash": "6030403399626434192"
+        },
+        {
+          "file": "libs/components/src/scroll-progress/scroll-progress.tsx",
+          "hash": "12649999803975554553",
+          "deps": [
+            "npm:framer-motion",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/scrollbar/index.ts",
+          "hash": "14086020644601878122"
+        },
+        {
+          "file": "libs/components/src/scrollbar/scrollbar.tsx",
+          "hash": "11493743160111282589",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/scrollbar/styles.ts",
+          "hash": "15126368775718516056",
+          "deps": [
+            "npm:simplebar-react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/scrollbar/types.ts",
+          "hash": "16032216569211891859",
+          "deps": [
+            "npm:simplebar-react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/search-not-found/index.ts",
+          "hash": "16281341163040143907"
+        },
+        {
+          "file": "libs/components/src/search-not-found/search-not-found.tsx",
+          "hash": "7872789051662944591",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/settings/context/index.ts",
+          "hash": "12242336830472639860"
+        },
+        {
+          "file": "libs/components/src/settings/context/settings-context.tsx",
+          "hash": "12285236206639447134",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/components/src/settings/context/settings-provider.tsx",
+          "hash": "1760019711369612143",
+          "deps": [
+            "npm:lodash",
+            "npm:react",
+            "hooks",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/settings/drawer/base-option.tsx",
+          "hash": "952591221082712752",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/settings/drawer/fullscreen-option.tsx",
+          "hash": "5640690752464119538",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/settings/drawer/index.ts",
+          "hash": "10262234599014949608"
+        },
+        {
+          "file": "libs/components/src/settings/drawer/layout-options.tsx",
+          "hash": "13982746686992672388",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/settings/drawer/presets-options.tsx",
+          "hash": "17119523698583677821",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/settings/drawer/settings-drawer.tsx",
+          "hash": "1528343160132000640",
+          "deps": [
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/settings/drawer/stretch-options.tsx",
+          "hash": "2512872446179124976",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/settings/index.ts",
+          "hash": "5357206949504899877"
+        },
+        {
+          "file": "libs/components/src/settings/types.ts",
+          "hash": "3869935177590265922"
+        },
+        {
+          "file": "libs/components/src/snackbar/index.ts",
+          "hash": "267152585887518562",
+          "deps": [
+            "npm:notistack"
+          ]
+        },
+        {
+          "file": "libs/components/src/snackbar/snackbar-provider.tsx",
+          "hash": "10962097641798020796",
+          "deps": [
+            "npm:react",
+            "npm:notistack",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/snackbar/styles.ts",
+          "hash": "5853941339320553338",
+          "deps": [
+            "npm:notistack",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/svg-color/index.ts",
+          "hash": "17805358631453316469"
+        },
+        {
+          "file": "libs/components/src/svg-color/svg-color.tsx",
+          "hash": "9516169662614062059",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/table/data-table.tsx",
+          "hash": "1062462727727159273",
+          "deps": [
+            "npm:@mui/material",
+            "npm:react",
+            "npm:@mui/system"
+          ]
+        },
+        {
+          "file": "libs/components/src/table/index.ts",
+          "hash": "8530244323935057797"
+        },
+        {
+          "file": "libs/components/src/table/table-empty-rows.tsx",
+          "hash": "13607119402479745513",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/table/table-head-custom.tsx",
+          "hash": "2581318476628131631",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/table/table-no-data.tsx",
+          "hash": "15082079652779143306",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/table/table-pagination-custom.tsx",
+          "hash": "3726537573914818115",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/table/table-selected-action.tsx",
+          "hash": "11155431660168514017",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/table/table-skeleton.tsx",
+          "hash": "855632493187940077",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/table/types.ts",
+          "hash": "16659973938596761289"
+        },
+        {
+          "file": "libs/components/src/table/use-table.ts",
+          "hash": "6364018834159783288",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/components/src/table/utils.ts",
+          "hash": "12667602692552140087"
+        },
+        {
+          "file": "libs/components/src/text-max-line/index.ts",
+          "hash": "4835180703251347478"
+        },
+        {
+          "file": "libs/components/src/text-max-line/text-max-line.tsx",
+          "hash": "7150508291356358440",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/text-max-line/types.ts",
+          "hash": "13942109423683333730",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/text-max-line/use-typography.ts",
+          "hash": "14787815492707705249",
+          "deps": [
+            "npm:@mui/material",
+            "hooks"
+          ]
+        },
+        {
+          "file": "libs/components/src/upload/errors-rejection-files.tsx",
+          "hash": "14508529406230958900",
+          "deps": [
+            "npm:react-dropzone",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/upload/index.ts",
+          "hash": "2463151147252558255",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/components/src/upload/preview-multi-file.tsx",
+          "hash": "9848268599973804253",
+          "deps": [
+            "npm:framer-motion",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/upload/preview-single-file.tsx",
+          "hash": "4414807132685172827",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/upload/types.ts",
+          "hash": "17372060779828905293",
+          "deps": [
+            "npm:react-dropzone",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/upload/upload-avatar.tsx",
+          "hash": "5577156373841595748",
+          "deps": [
+            "npm:react-dropzone",
+            "npm:@mui/material",
+            "config"
+          ]
+        },
+        {
+          "file": "libs/components/src/upload/upload-box.tsx",
+          "hash": "16639615747578279252",
+          "deps": [
+            "npm:react-dropzone",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/upload/upload.tsx",
+          "hash": "9359227372216243371",
+          "deps": [
+            "npm:react-dropzone",
+            "npm:@mui/material",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/components/src/walktour/index.ts",
+          "hash": "14881999754330771830"
+        },
+        {
+          "file": "libs/components/src/walktour/use-walktour.tsx",
+          "hash": "11774594233862787060",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/components/src/walktour/walktour-progress-bar.tsx",
+          "hash": "9223776284618887746",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/src/walktour/walktour.tsx",
+          "hash": "15524644983042673871",
+          "deps": [
+            "npm:next",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/components/tsconfig.json",
+          "hash": "14088618039610991405"
+        },
+        {
+          "file": "libs/components/tsconfig.lib.json",
+          "hash": "1536859351713546153"
+        }
+      ],
+      "utils": [
+        {
+          "file": "libs/utils/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/utils/README.md",
+          "hash": "14342862180974447819"
+        },
+        {
+          "file": "libs/utils/project.json",
+          "hash": "10247803910960718834"
+        },
+        {
+          "file": "libs/utils/src/assets/data/countries.ts",
+          "hash": "9263547153841033748"
+        },
+        {
+          "file": "libs/utils/src/assets/data/index.ts",
+          "hash": "5251465095604800443"
+        },
+        {
+          "file": "libs/utils/src/assets/icons/email-inbox-icon.tsx",
+          "hash": "12287251056513267005",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/icons/index.ts",
+          "hash": "8678004711471291438"
+        },
+        {
+          "file": "libs/utils/src/assets/icons/new-password-icon.tsx",
+          "hash": "12363632321351906313",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/icons/password-icon.tsx",
+          "hash": "11367025409153654330",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/icons/plan-free-icon.tsx",
+          "hash": "5239245344840693914",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/icons/plan-premium-icon.tsx",
+          "hash": "6901576883775512105",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/icons/plan-starter-icon.tsx",
+          "hash": "2403208734687788590",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/icons/sent-icon.tsx",
+          "hash": "10989789931214409896",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/avatar-shape.tsx",
+          "hash": "14375146683949770846",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/background-shape.tsx",
+          "hash": "7943779447372964716",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/booking-illustration.tsx",
+          "hash": "14988892044353743410",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/check-in-illustration.tsx",
+          "hash": "15531643550730942836",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/check-out-illustration.tsx",
+          "hash": "6732766599725495871",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/coming-soon-illustration.tsx",
+          "hash": "7458841571769956955",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/forbidden-illustration.tsx",
+          "hash": "14835295097303583914",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/index.ts",
+          "hash": "1211673147835868458"
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/maintenance-illustration.tsx",
+          "hash": "6518300734276779984",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/motivation-illustration.tsx",
+          "hash": "1870710941317700879",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/order-complete-illustration.tsx",
+          "hash": "15581487232135856258",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/page-not-found-illustration.tsx",
+          "hash": "18383251597868426794",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/seo-illustration.tsx",
+          "hash": "2650489381620425445",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/sever-error-illustration.tsx",
+          "hash": "1088277791675623514",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/upgrade-storage-illustration.tsx",
+          "hash": "2042573188523799012",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/assets/illustrations/upload-illustration.tsx",
+          "hash": "3468371642590955431",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/auth/context/jwt/auth-consumer.tsx",
+          "hash": "2825572452508850840",
+          "deps": [
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/auth/context/jwt/auth-context.tsx",
+          "hash": "9650965392275812917",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/utils/src/auth/context/jwt/auth-provider.tsx",
+          "hash": "7090356682652895987",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/utils/src/auth/context/jwt/utils.ts",
+          "hash": "2601001137832747574"
+        },
+        {
+          "file": "libs/utils/src/auth/guard/auth-guard.tsx",
+          "hash": "4967330985936667310",
+          "deps": [
+            "npm:react",
+            "components",
+            "npm:react-redux",
+            "redux",
+            "npm:cookie-storage",
+            "config",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "libs/utils/src/auth/guard/guest-guard.tsx",
+          "hash": "2666134435630992688",
+          "deps": [
+            "npm:react",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/auth/guard/index.ts",
+          "hash": "12448553165987521416"
+        },
+        {
+          "file": "libs/utils/src/auth/guard/profile-guard.tsx",
+          "hash": "6954936736605446652",
+          "deps": [
+            "npm:react-redux",
+            "redux",
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/utils/src/auth/guard/role-based-guard.tsx",
+          "hash": "10631053511869381307",
+          "deps": [
+            "npm:framer-motion",
+            "npm:@mui/material",
+            "hooks",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/auth/hooks/index.ts",
+          "hash": "2960491916605276603"
+        },
+        {
+          "file": "libs/utils/src/auth/hooks/use-auth-context.ts",
+          "hash": "17265040627729918351",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/utils/src/auth/types.ts",
+          "hash": "11394809319802908627",
+          "deps": [
+            "npm:@auth0/auth0-react"
+          ]
+        },
+        {
+          "file": "libs/utils/src/axios.ts",
+          "hash": "1064629939556683281",
+          "deps": [
+            "npm:axios",
+            "npm:universal-cookie"
+          ]
+        },
+        {
+          "file": "libs/utils/src/change-case.ts",
+          "hash": "16792339133895098363"
+        },
+        {
+          "file": "libs/utils/src/flatten-array.ts",
+          "hash": "18405612841462863080"
+        },
+        {
+          "file": "libs/utils/src/format-number.ts",
+          "hash": "16783741723034530464"
+        },
+        {
+          "file": "libs/utils/src/format-time.ts",
+          "hash": "4198784147008805356",
+          "deps": [
+            "npm:date-fns"
+          ]
+        },
+        {
+          "file": "libs/utils/src/highlight.ts",
+          "hash": "7347175684826276678",
+          "deps": [
+            "npm:highlight.js"
+          ]
+        },
+        {
+          "file": "libs/utils/src/index.ts",
+          "hash": "14019734901584206727"
+        },
+        {
+          "file": "libs/utils/src/layouts/auth/classic.tsx",
+          "hash": "6127089192004166966",
+          "deps": [
+            "npm:@mui/material",
+            "hooks",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/common/account-popover.tsx",
+          "hash": "18105649002840142253",
+          "deps": [
+            "npm:framer-motion",
+            "npm:@mui/material",
+            "components",
+            "npm:react-redux",
+            "redux",
+            "npm:cookie-storage",
+            "config"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/common/contacts-popover.tsx",
+          "hash": "18225515019421457252",
+          "deps": [
+            "npm:framer-motion",
+            "npm:@mui/material",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/common/header-shadow.tsx",
+          "hash": "10027907280669713761",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/common/header-simple.tsx",
+          "hash": "15427001724771286874",
+          "deps": [
+            "npm:@mui/material",
+            "hooks",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/common/language-popover.tsx",
+          "hash": "2686697145255801637",
+          "deps": [
+            "npm:framer-motion",
+            "npm:react",
+            "npm:@mui/material",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/common/nav-toggle-button.tsx",
+          "hash": "14057638232276464913",
+          "deps": [
+            "npm:@mui/material",
+            "hooks",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/common/nav-upgrade.tsx",
+          "hash": "6483328640881265082",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/common/notifications-popover/index.tsx",
+          "hash": "472927372331434485",
+          "deps": [
+            "npm:framer-motion",
+            "npm:react",
+            "npm:@mui/material",
+            "hooks",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/common/notifications-popover/notification-item.tsx",
+          "hash": "2311368370714238721",
+          "deps": [
+            "npm:@mui/material",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/common/searchbar/index.tsx",
+          "hash": "6505898819329431939",
+          "deps": [
+            "npm:autosuggest-highlight",
+            "npm:react",
+            "npm:@mui/material",
+            "hooks",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/common/searchbar/result-item.tsx",
+          "hash": "5919768057591867902",
+          "deps": [
+            "npm:@mui/material",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/common/searchbar/utils.ts",
+          "hash": "10214819175966509177",
+          "deps": [
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/common/settings-button.tsx",
+          "hash": "323670424462236007",
+          "deps": [
+            "npm:framer-motion",
+            "npm:@mui/material",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/compact/index.tsx",
+          "hash": "13185694870045685887",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/config-layout.ts",
+          "hash": "14429140200421161474"
+        },
+        {
+          "file": "libs/utils/src/layouts/dashboard/header.tsx",
+          "hash": "2368510230709854925",
+          "deps": [
+            "npm:@mui/material",
+            "hooks",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/dashboard/index.tsx",
+          "hash": "7821046433152234360",
+          "deps": [
+            "npm:@mui/material",
+            "hooks",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/dashboard/main.tsx",
+          "hash": "16837447404545698030",
+          "deps": [
+            "npm:@mui/material",
+            "hooks",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/dashboard/nav-horizontal.tsx",
+          "hash": "2985130479223946241",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "hooks",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/dashboard/nav-mini.tsx",
+          "hash": "14060758446482984937",
+          "deps": [
+            "npm:@mui/material",
+            "hooks",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/layouts/dashboard/nav-vertical.tsx",
+          "hash": "7679541467743963360",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "hooks",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/locales/config-lang.ts",
+          "hash": "12767866719988180634",
+          "deps": [
+            "npm:lodash",
+            "npm:date-fns",
+            "npm:@mui/x-date-pickers",
+            "npm:@mui/material",
+            "npm:@mui/x-data-grid"
+          ]
+        },
+        {
+          "file": "libs/utils/src/locales/i18n.ts",
+          "hash": "5503397899371380702",
+          "deps": [
+            "npm:i18next",
+            "npm:react-i18next",
+            "npm:i18next-browser-languagedetector"
+          ]
+        },
+        {
+          "file": "libs/utils/src/locales/index.ts",
+          "hash": "17672890912291160335"
+        },
+        {
+          "file": "libs/utils/src/locales/langs/ar.json",
+          "hash": "10793187048293819698"
+        },
+        {
+          "file": "libs/utils/src/locales/langs/cn.json",
+          "hash": "12050972099241416430"
+        },
+        {
+          "file": "libs/utils/src/locales/langs/en.json",
+          "hash": "17012493769189312935"
+        },
+        {
+          "file": "libs/utils/src/locales/langs/fr.json",
+          "hash": "12570999651510805621"
+        },
+        {
+          "file": "libs/utils/src/locales/langs/vi.json",
+          "hash": "5353518506775676229"
+        },
+        {
+          "file": "libs/utils/src/locales/localization-provider.tsx",
+          "hash": "10945074228633289059",
+          "deps": [
+            "npm:@mui/x-date-pickers"
+          ]
+        },
+        {
+          "file": "libs/utils/src/locales/use-locales.ts",
+          "hash": "16015579803669431445",
+          "deps": [
+            "npm:react",
+            "npm:react-i18next",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/request/axios.ts",
+          "hash": "9558287345196850428",
+          "deps": [
+            "npm:axios",
+            "npm:redux-saga"
+          ]
+        },
+        {
+          "file": "libs/utils/src/request/cookies.ts",
+          "hash": "7505972485292408205",
+          "deps": [
+            "npm:universal-cookie"
+          ]
+        },
+        {
+          "file": "libs/utils/src/request/getSignedUrl.ts",
+          "hash": "7296673504258943132"
+        },
+        {
+          "file": "libs/utils/src/request/helper.ts",
+          "hash": "9039369014089137857"
+        },
+        {
+          "file": "libs/utils/src/request/rest.app.ts",
+          "hash": "13774857250588030041",
+          "deps": [
+            "npm:@feathersjs/feathers",
+            "npm:@feathersjs/authentication-client",
+            "npm:cookie-storage",
+            "npm:@feathersjs/rest-client",
+            "npm:axios",
+            "config"
+          ]
+        },
+        {
+          "file": "libs/utils/src/request/services.json",
+          "hash": "10272732324555062782"
+        },
+        {
+          "file": "libs/utils/src/routes/components/index.ts",
+          "hash": "2209604149980004035"
+        },
+        {
+          "file": "libs/utils/src/routes/components/router-link.tsx",
+          "hash": "7558931933291144137",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/utils/src/routes/hooks/index.ts",
+          "hash": "15704202443345840231"
+        },
+        {
+          "file": "libs/utils/src/routes/hooks/use-active-link.ts",
+          "hash": "13529350504438857068",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/utils/src/routes/hooks/use-params.ts",
+          "hash": "5812858384955500636",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/utils/src/routes/hooks/use-pathname.ts",
+          "hash": "2039268319134022626",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/utils/src/routes/hooks/use-router.ts",
+          "hash": "5971560450723344279",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/utils/src/routes/hooks/use-search-params.ts",
+          "hash": "16819685032717647036",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/utils/src/routes/paths.ts",
+          "hash": "13853499732345414288"
+        },
+        {
+          "file": "libs/utils/src/storage-available.ts",
+          "hash": "12471948383909908715"
+        },
+        {
+          "file": "libs/utils/src/theme/css.ts",
+          "hash": "7850695707708555182",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/custom-shadows.ts",
+          "hash": "7447802262001577489",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/index.tsx",
+          "hash": "16078883907417573773",
+          "deps": [
+            "npm:react",
+            "npm:lodash",
+            "npm:@mui/material",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/next-emotion-cache.tsx",
+          "hash": "3909567396206468721",
+          "deps": [
+            "npm:react",
+            "npm:@emotion/cache",
+            "npm:next",
+            "npm:@emotion/react"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/options/contrast.ts",
+          "hash": "5316935605470265816"
+        },
+        {
+          "file": "libs/utils/src/theme/options/presets.ts",
+          "hash": "8599883512041467958",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/options/right-to-left.tsx",
+          "hash": "10072346607935213944",
+          "deps": [
+            "npm:react",
+            "npm:@emotion/cache",
+            "npm:stylis-plugin-rtl",
+            "npm:@emotion/react"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/accordion.tsx",
+          "hash": "17317157936304946064",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/alert.tsx",
+          "hash": "11590924104157203477",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/appbar.tsx",
+          "hash": "6089099959250193077",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/autocomplete.tsx",
+          "hash": "4620058140865773775",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/avatar.tsx",
+          "hash": "11404016374372468334",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/backdrop.tsx",
+          "hash": "12404708605357395208",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/badge.tsx",
+          "hash": "3364283202662772597",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/breadcrumbs.tsx",
+          "hash": "8760691374480667075",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/button-group.tsx",
+          "hash": "15610364065301573904",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/button.tsx",
+          "hash": "15185382786527715079",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/card.tsx",
+          "hash": "17724557020410192803",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/checkbox.tsx",
+          "hash": "8576543039290074395",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/chip.tsx",
+          "hash": "4622313388216016505",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/css-baseline.tsx",
+          "hash": "11211633364719699576",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/data-grid.tsx",
+          "hash": "7564314025484664547",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/date-picker.tsx",
+          "hash": "12281044439859055852",
+          "deps": [
+            "npm:@mui/material",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/dialog.tsx",
+          "hash": "4477465416203199515",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/drawer.tsx",
+          "hash": "17683300536891383679",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/fab.tsx",
+          "hash": "14453732050430077047",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/list.tsx",
+          "hash": "72235722548028291",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/loading-button.tsx",
+          "hash": "15068424072282488126",
+          "deps": [
+            "npm:@mui/material",
+            "npm:@mui/lab"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/menu.tsx",
+          "hash": "10101746199325023392",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/pagination.tsx",
+          "hash": "18069151814121978375",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/paper.tsx",
+          "hash": "4090062157451246243",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/popover.tsx",
+          "hash": "3668189254717650510",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/progress.tsx",
+          "hash": "10558984539380271600",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/radio.tsx",
+          "hash": "15870947830734734070",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/rating.tsx",
+          "hash": "1449763520931102290",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/select.tsx",
+          "hash": "8727745382576545526",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/skeleton.tsx",
+          "hash": "12774524442926377355",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/slider.tsx",
+          "hash": "11160231210780956432",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/stepper.tsx",
+          "hash": "4365398051907393988",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/svg-icon.tsx",
+          "hash": "7831106128376311600",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/switch.tsx",
+          "hash": "18087446243582750381",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/table.tsx",
+          "hash": "10881972964101136455",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/tabs.tsx",
+          "hash": "6146946703529314403",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/textfield.tsx",
+          "hash": "13850595527243607942",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/timeline.tsx",
+          "hash": "13306085173312778966",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/toggle-button.tsx",
+          "hash": "11554579493022776139",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/tooltip.tsx",
+          "hash": "8375994758761276802",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/tree-view.tsx",
+          "hash": "13824909654306455519",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/components/typography.tsx",
+          "hash": "12604013234665579510",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/default-props.tsx",
+          "hash": "14723797291685129362",
+          "deps": [
+            "npm:@mui/material",
+            "components"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/overrides/index.ts",
+          "hash": "12615454807474671469",
+          "deps": [
+            "npm:lodash",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/palette.ts",
+          "hash": "5171524905560621019",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/shadows.ts",
+          "hash": "10215819325607781896",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/utils/src/theme/typography.ts",
+          "hash": "18307645916060078219",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/utils/src/uuidv4.ts",
+          "hash": "840785666067873901"
+        },
+        {
+          "file": "libs/utils/tsconfig.json",
+          "hash": "10025304134076816057"
+        },
+        {
+          "file": "libs/utils/tsconfig.lib.json",
+          "hash": "62365208711989218"
+        }
+      ],
+      "hooks": [
+        {
+          "file": "libs/hooks/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/hooks/README.md",
+          "hash": "3701425405971344161"
+        },
+        {
+          "file": "libs/hooks/project.json",
+          "hash": "2363920626180371812"
+        },
+        {
+          "file": "libs/hooks/src/index.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/hooks/src/use-boolean.ts",
+          "hash": "1806529954520938186",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/hooks/src/use-event-listener.ts",
+          "hash": "13969752822796387216",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/hooks/src/use-local-storage.ts",
+          "hash": "12842705624550137289",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/hooks/src/use-mocked-user.ts",
+          "hash": "16550788758576528818"
+        },
+        {
+          "file": "libs/hooks/src/use-off-set-top.ts",
+          "hash": "12358312542696918201",
+          "deps": [
+            "npm:framer-motion",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/hooks/src/use-responsive.ts",
+          "hash": "7101301415594009522",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/hooks/src/useHandleError.ts",
+          "hash": "6563402698670389360",
+          "deps": [
+            "npm:notistack"
+          ]
+        },
+        {
+          "file": "libs/hooks/tsconfig.json",
+          "hash": "14088618039610991405"
+        },
+        {
+          "file": "libs/hooks/tsconfig.lib.json",
+          "hash": "1536859351713546153"
+        }
+      ],
+      "config": [
+        {
+          "file": "libs/config/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/config/README.md",
+          "hash": "3621170795989262186"
+        },
+        {
+          "file": "libs/config/project.json",
+          "hash": "10672213440035705464"
+        },
+        {
+          "file": "libs/config/src/env/dev/index.ts",
+          "hash": "10020449414279005793"
+        },
+        {
+          "file": "libs/config/src/env/index.ts",
+          "hash": "14790554256448198822"
+        },
+        {
+          "file": "libs/config/src/env/prod/index.ts",
+          "hash": "10020449414279005793"
+        },
+        {
+          "file": "libs/config/src/images/index.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/config/src/index.ts",
+          "hash": "12748436887961047949"
+        },
+        {
+          "file": "libs/config/tsconfig.json",
+          "hash": "14088618039610991405"
+        },
+        {
+          "file": "libs/config/tsconfig.lib.json",
+          "hash": "1536859351713546153"
+        }
+      ],
+      "redux": [
+        {
+          "file": "libs/redux/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/redux/README.md",
+          "hash": "3823094442874683927"
+        },
+        {
+          "file": "libs/redux/project.json",
+          "hash": "5242806345906215047"
+        },
+        {
+          "file": "libs/redux/src/ReduxProvider.tsx",
+          "hash": "8450731911829698391",
+          "deps": [
+            "npm:react",
+            "npm:react-redux"
+          ]
+        },
+        {
+          "file": "libs/redux/src/global/actionType.ts",
+          "hash": "14523734372846619759"
+        },
+        {
+          "file": "libs/redux/src/global/global.action.ts",
+          "hash": "939684781102285315"
+        },
+        {
+          "file": "libs/redux/src/global/global.reducer.ts",
+          "hash": "7922951335025924111"
+        },
+        {
+          "file": "libs/redux/src/global/global.saga.ts",
+          "hash": "2728040793453649352",
+          "deps": [
+            "npm:redux-saga",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/redux/src/global/global.selector.ts",
+          "hash": "9055317770759364836"
+        },
+        {
+          "file": "libs/redux/src/global/initialState.ts",
+          "hash": "16784615436635043387"
+        },
+        {
+          "file": "libs/redux/src/global/types.ts",
+          "hash": "8942181677682624561"
+        },
+        {
+          "file": "libs/redux/src/rootReducer.ts",
+          "hash": "15182697351778582889"
+        },
+        {
+          "file": "libs/redux/src/rootSaga.ts",
+          "hash": "10168649437706307545"
+        },
+        {
+          "file": "libs/redux/src/store.ts",
+          "hash": "3014672424642020727",
+          "deps": [
+            "npm:@reduxjs/toolkit",
+            "npm:redux"
+          ]
+        },
+        {
+          "file": "libs/redux/src/types/ReduxCommon.d.ts",
+          "hash": "796350339013614050",
+          "deps": [
+            "npm:redux"
+          ]
+        },
+        {
+          "file": "libs/redux/src/types/User.d.ts",
+          "hash": "9008224042754795850"
+        },
+        {
+          "file": "libs/redux/src/useInjectReducer.ts",
+          "hash": "17454469428729966925",
+          "deps": [
+            "npm:redux",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/redux/src/useInjectSaga.ts",
+          "hash": "563963338969526505",
+          "deps": [
+            "npm:react",
+            "npm:redux-saga"
+          ]
+        },
+        {
+          "file": "libs/redux/store.ts",
+          "hash": "3014672424642020727",
+          "deps": [
+            "npm:@reduxjs/toolkit",
+            "npm:redux"
+          ]
+        },
+        {
+          "file": "libs/redux/tsconfig.json",
+          "hash": "14088618039610991405"
+        },
+        {
+          "file": "libs/redux/tsconfig.lib.json",
+          "hash": "1536859351713546153"
+        }
+      ],
+      "auth": [
+        {
+          "file": "apps/auth/eslint.config.cjs",
+          "hash": "3058025270249315262",
+          "deps": [
+            "npm:@eslint/eslintrc",
+            "npm:@eslint/js",
+            "npm:@eslint/compat",
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/auth/index.d.ts",
+          "hash": "5498222895072842432"
+        },
+        {
+          "file": "apps/auth/next-env.d.ts",
+          "hash": "13904763933831424769"
+        },
+        {
+          "file": "apps/auth/next.config.js",
+          "hash": "17252635002163063865",
+          "deps": [
+            "npm:@nx/next"
+          ]
+        },
+        {
+          "file": "apps/auth/project.json",
+          "hash": "14027371159211067887"
+        },
+        {
+          "file": "apps/auth/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/auth/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/auth/public/psoc_logo.png",
+          "hash": "8242970864024701373"
+        },
+        {
+          "file": "apps/auth/src/app/global.css",
+          "hash": "2063387531564215811"
+        },
+        {
+          "file": "apps/auth/src/app/layout.tsx",
+          "hash": "18174352086382976073"
+        },
+        {
+          "file": "apps/auth/src/app/page.module.css",
+          "hash": "4786619528779355986"
+        },
+        {
+          "file": "apps/auth/src/app/page.tsx",
+          "hash": "12379696640412476832"
+        },
+        {
+          "file": "apps/auth/src/sections/auth/jwt/index.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/auth/src/sections/auth/jwt/jwt-login-view.tsx",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/auth/tsconfig.json",
+          "hash": "11151830637513561663"
+        }
+      ]
+    }
+  }
+}
